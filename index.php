@@ -18,8 +18,8 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 define('APP_DEBUG',True);
 
 //定义站点根目录
-define('SITE_ROOT', getcwd(__FILE__) . '/');
-echo '<div align="center">'.SITE_ROOT.'</div>';
+define('SITE_ROOT', getcwd() . '/');
+echo '<div align="center">' . SITE_ROOT . '</div>';
 
 // 定义应用目录
 define('APP_PATH',SITE_ROOT.'Application/');
