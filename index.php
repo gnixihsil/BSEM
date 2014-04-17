@@ -17,11 +17,11 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG',True);
 
-//定义站点根目录
+//定义站点根目录绝对路径
 define('SITE_ROOT', getcwd() . '/');
 echo '<div align="center">' . SITE_ROOT . '</div>';
 
-// 定义应用目录
+// 定义应用目录路径
 define('APP_PATH',SITE_ROOT.'Application/');
 
 // 引入ThinkPHP入口文件
