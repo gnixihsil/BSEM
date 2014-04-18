@@ -19,12 +19,15 @@ define('APP_DEBUG',True);
 
 //定义站点根目录绝对路径
 define('SITE_ROOT', getcwd() . '/');
-echo '<div align="center">' . SITE_ROOT . '</div>';
+echo '<div align=\"center\">Site Root : ' . SITE_ROOT . '</div>';
 
 // 定义应用目录路径
 define('APP_PATH',SITE_ROOT.'Application/');
+echo '<div align=\"center\">App Path : ' . APP_PATH . '</div>';
 
+//定义ThinkPHP框架系统根目录
+define('THINK_PATH',SITE_ROOT.'ThinkPHP/');
 // 引入ThinkPHP入口文件
-require './ThinkPHP/ThinkPHP.php';
+require THINK_PATH.'ThinkPHP.php';
 
 // 亲^_^ 后面不需要任何代码了 就是如此简单
